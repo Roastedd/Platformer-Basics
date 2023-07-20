@@ -5,12 +5,10 @@ if (distance_to_point(mouse_x,mouse_y) <= 0) {
 	if (mouse_check_button_pressed(mb_any)) {
 		audio_play_sound(snd_button_click,1,0);
 		if (file_exists("Save.sav")) {
-			scr_load_game();
-		} else {
-			
-			fade_out(rm_level_1,global.checkpoint_x,global.checkpoint_y);
-		}
-			
+			file_delete("Save.sav");
+		} 
+		scr_init();
+		instance_destroy();
 	}
 } else {
 	hover = false;	
