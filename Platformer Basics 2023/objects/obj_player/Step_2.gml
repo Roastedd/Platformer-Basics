@@ -1,21 +1,35 @@
 ///@desc Set Animations
 
 //Adjust sprite 
-image_speed = 1;
+frameSpeed = 0.2;
 
-if (hsp != 0) {
-	image_xscale = sign(hsp);
+	xScale = approach(xScale, 1, 0.035);
+	yScale = approach(yScale, 1, 0.035);
 
+
+	xPos = x;
+	yPos = y;
+
+if (hsp > 0) {
+	facing = 1;	
+} else if (hsp < 0) {
+	facing = -1;	
 }
 
 if (!on_ground) {
-	sprite_index = spr_player_air;
-	image_speed = 0;
-	image_index = (vsp > 0);
+	if (on_wall != 0) {
+		sprite = spr_player_wall;
+		facing = on_wall; // left wall -1, on right 1
+	} else { 
+		sprite = spr_player_air;
+		frameSpeed = 0;
+		frame = (vsp > 0);
+	}
 } else {
 	if (hsp != 0) {
-		sprite_index = spr_player_run;	
+		frameSpeed = abs(hsp) * 0.08;
+		sprite = spr_player_run;	
 	} else {
-		sprite_index = spr_player_idle;	
+		sprite = spr_player_idle;	
 	}
 }
