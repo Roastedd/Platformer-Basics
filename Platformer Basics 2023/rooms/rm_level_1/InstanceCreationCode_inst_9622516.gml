@@ -1,0 +1,1 @@
+text = "Use left and right \narrow keys to move"

@@ -13,6 +13,7 @@ if (attack_cooldown > 0) {
 	if (key_attack) {
 		attack_cooldown = attack_max;
 		instance_create_layer(x,y,"Weapon",obj_weapon);
+		scr_play_sound(snd_attack,2,false);
 	}	
 }
 

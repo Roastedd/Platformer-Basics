@@ -6,5 +6,6 @@ function player_death(){
 	instance_create_layer(x,y,"Instances",obj_explode);
 	scr_screen_shake(12,50)
 	instance_destroy();
+	scr_play_sound(snd_death,1,false);
 	
 }

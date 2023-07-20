@@ -15,7 +15,7 @@ function animation_init() {
 	frameSpeed = 0.18;
 	facing = 1;
 	lastSprite = sprite;
-
+	lastFrame = 0;
 
 
 }

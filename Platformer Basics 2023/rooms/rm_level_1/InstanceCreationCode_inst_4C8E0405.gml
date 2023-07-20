@@ -1,0 +1,1 @@
+text = "Hold Jump to jump higher"

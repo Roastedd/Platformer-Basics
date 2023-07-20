@@ -1,8 +1,8 @@
 hsp = 0;		//horizontal speed
-max_hsp = 3.5;	//max horizontal speed
+max_hsp = 5;	//max horizontal speed
 vsp = 0;		//vertical speed
-grav = 0.5;
-max_vsp = 12;	//maximum vertical speed, increase to jump higher
+grav = 0.6;
+max_vsp = 18;	//maximum vertical speed, increase to jump higher
 
 // Player Inputs
 key_left = 0;	//left key var
@@ -18,7 +18,7 @@ attack_max = 20; //number of frames till next attack
 //jumping 
 on_ground = false;
 groundbuffer = 3;	//lets player jump if at least 3 pixels close to ground
-jumpspeed = -12;	// set jump height
+jumpspeed = -13;	// set jump height
 jumpbuffer = 6;		// jump counter
 init_jumpbuffer = 10;//frames after leaving ground when we can still jump
 

@@ -52,6 +52,7 @@ function scr_player_inputs(){
 			hsp = -on_wall * hsp_wall_jump;
 			//change vsp to jump vertically
 			vsp = jumpspeed_wall;
+			scr_play_sound(snd_jump,2,false);
 		}
 	}
 	
@@ -72,8 +73,10 @@ function scr_player_inputs(){
 	if (jumpbuffer > 0) {
 		jumpbuffer --;		//reduces jump buffer by 1 each frame
 		if (key_jump) {
+			
 			jumpbuffer = 0;	//can't jump again
 			vsp = jumpspeed;//jump by using the jumpspeed var
+			scr_play_sound(snd_jump,2,false);
 		}
 	}
 	

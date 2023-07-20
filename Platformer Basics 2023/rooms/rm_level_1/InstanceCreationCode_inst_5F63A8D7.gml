@@ -1,0 +1,1 @@
+text = "Press the letter X key to use number shield"
