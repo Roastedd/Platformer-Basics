@@ -4,6 +4,7 @@ function player_death(){
 	fade_out(global.checkpoint_room,global.checkpoint_x,global.checkpoint_y);
 	
 	instance_create_layer(x,y,"Instances",obj_explode);
+	scr_screen_shake(12,50)
 	instance_destroy();
 	
 }
