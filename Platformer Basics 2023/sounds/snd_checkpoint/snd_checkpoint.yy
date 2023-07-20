@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_checkpoint.wav",
   "type": 0,
-  "volume": 0.87,
+  "volume": 0.8,
 }

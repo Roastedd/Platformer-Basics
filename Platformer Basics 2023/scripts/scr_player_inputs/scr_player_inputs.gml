@@ -52,7 +52,8 @@ function scr_player_inputs(){
 			hsp = -on_wall * hsp_wall_jump;
 			//change vsp to jump vertically
 			vsp = jumpspeed_wall;
-			scr_play_sound(snd_jump,2,false);
+			var j_sound = audio_play_sound(snd_jump,2,false);
+			audio_sound_pitch(j_sound, 2); // You can adjust the pitch if necessary
 		}
 	}
 	
@@ -76,7 +77,8 @@ function scr_player_inputs(){
 			
 			jumpbuffer = 0;	//can't jump again
 			vsp = jumpspeed;//jump by using the jumpspeed var
-			scr_play_sound(snd_jump,2,false);
+			var j_sound = audio_play_sound(snd_jump,2,false);
+			audio_sound_pitch(j_sound, 2); // You can adjust the pitch if necessary
 		}
 	}
 	

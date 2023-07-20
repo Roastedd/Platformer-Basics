@@ -18,4 +18,5 @@ function room_code(){
 		instance_create_layer(global.target_x,global.target_y,"Instances",obj_camera);	
 	}
 	
+	window_set_cursor(cr_none);
 }
