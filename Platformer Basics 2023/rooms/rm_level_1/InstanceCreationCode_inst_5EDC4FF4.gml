@@ -1,3 +1,3 @@
-target_x = 994;
-target_y = 549;
+target_x = 30;
+target_y = 608;
 target_room = rm_level_2;

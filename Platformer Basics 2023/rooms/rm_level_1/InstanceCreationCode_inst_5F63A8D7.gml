@@ -1,1 +1,1 @@
-text = "Press the letter X key to use number shield"
+text = "Press the letter X key \nto use number shield"

@@ -1,0 +1,1 @@
+text = "Jump on walls to go up"
